@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+}
+
+#header{
+    font-family: 'Roboto Mono';
+    font-size: 50px;
+    /*text-align: center;*/
+    padding: 10px;
+    padding-left: 30px;
+    background-color: rgb(140, 202, 202);
+}
+
+#add-button{
+    display: flex;
+    justify-content: center;
+}
+#new-book{
+    height: 45px;
+    width: 250px;
+    margin: 10px;
+    margin-top: 20px;
+    font-family: 'Roboto Mono';
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(140, 202, 202);
+    
+}
