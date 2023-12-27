@@ -6,6 +6,7 @@ var bookName="";
 var author="";
 var pages="";
 var readStatus="";
+const arr = [];
 
 addBookButton.addEventListener("click", () => {
     formDialog.showModal();
@@ -26,8 +27,27 @@ addButton.addEventListener("click", (event) => {
        readStatus = "Read";
     else
        readStatus = "Unread";
+       addBookToLibrary();    
+});
+
+/*function test(){
     console.log(bookName);
     console.log(author);
     console.log(pages);
     console.log(readStatus);
-});
+}*/
+
+//constructor
+function Book(){
+    this.bookName=bookName;
+    this.author=author;
+    this.pages=pages;
+    this.readStatus=readStatus;
+}
+
+function addBookToLibrary(){
+    const bookObj = new Book();
+    arr.push(bookObj);
+    console.log(bookObj);
+    console.log(arr);
+}
