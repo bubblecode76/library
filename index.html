@@ -12,22 +12,25 @@
             <button id="new-book">+ add book</button>
         </div>
         <dialog id="form-dialog">
-            <form>
-                <label>Name :</label>
-                <input type="text" name="bookname">
+            <form method="dialog">
+                <label for="bookName">Name :</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <input type="text" name="bookname" class="input-field" id="bookName">
                 <br/><br/>
-                <label>Author :</label>
-                <input type="text" name="author">
+                <label for="authorName">Author :</label>&emsp;&emsp;&emsp;&emsp;&emsp;
+                <input type="text" name="author" class="input-field" id="authorName">
                 <br/><br/>
-                <label>No. of Pages :</label>
-                <input type="number" name="pages">
+                <label for="pagesNum">Total Pages :</label>
+                <input type="number" name="pages" class="input-field" id="pagesNum">
                 <br/><br/>
-                <input type="checkbox" name="readstatus">
-                <label>Read</label>
+                <input type="checkbox" name="readstatus" id="check-field">
+                <label for="check-field">Read</label>
                 <br/><br/>
 
-                <button>ADD</button>
-                <button>CANCEL</button>
+                <div id="button-div">
+                    <button class="form-button" id="add-button2">ADD</button>
+                    <button class="form-button" id="cancel-button">CANCEL</button>
+                </div>
+                
             </form>
         </dialog>
     </body>
