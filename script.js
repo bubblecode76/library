@@ -48,6 +48,9 @@ function Book(){
 function addBookToLibrary(){
     const bookObj = new Book();
     arr.push(bookObj);
-    console.log(bookObj);
-    console.log(arr);
+
+    /*console.log(bookObj);
+    console.log(arr);*/
+
+    
 }
